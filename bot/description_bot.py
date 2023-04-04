@@ -179,6 +179,7 @@ async def cancel(message: types.Message, state: FSMContext):
 
     await state.finish()
 
+
 if __name__ == "__main__":
     dp.middleware.setup(AlbumMiddleware())
     executor.start_polling(dp)
