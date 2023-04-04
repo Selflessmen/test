@@ -134,7 +134,7 @@ async def add_new_manofactures(message: types.Message, state: FSMContext):
         except MessageToDeleteNotFound:
             pass
     db.add_user(data["manofact_id"], name=data["manofact_name"])
-    await bot.send_message(message.from_user.id, "Производитель добавлен.\nТеперь отправьте мне смайл которым мы будем отмечать данного производителя")
+    await bot.send_message(message.from_user.id, "Производитель добавлен.\nТепdfdfерь отправьте мне смайл которым мы будем отмечать данного производителя")
     await States.new_chanel.set()
 
 
